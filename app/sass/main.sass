@@ -19,6 +19,7 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
+	outline: none
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -26,6 +27,18 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+
+a
+	text-decoration: none
+	&:hover, &:active
+		text-decoration: none
+		color: #ffffff
+
+button
+	&:active, &:focus
+		outline: none
+	&::-moz-focus-inner
+		border: 0    	
 
 .img-responsive
 	display: block
@@ -40,7 +53,7 @@ body
 
 .section_1
 	position: relative
-	color: #ffffff
+	color: #e8e8e8
 	background: url(../img/background_section.jpg) no-repeat center
 	background-size: cover
 	min-height: 750px
@@ -58,6 +71,9 @@ body
 .header_wrap
 	padding: 215px 200px 100px
 	text-align: center
+	
+	.mmenu
+	text-align: center	
 
 	.header_title
 		font-size: 36px
@@ -67,17 +83,80 @@ body
 	.header_desc 
 		font-size: 17px
 		font-weight: 200
-		padding-top: 16px
+		padding: 16px 0 30px 0
+	
+	.btn_arrow 
+		.arrow
+			margin: 0 auto
+
+// Menu Burger Start
+.btn-burger 
+	width: 30px
+	height: 20px
+	position: relative
+	cursor: pointer
+	background: none
+	border: none
+	outline: none
+
+	.btnBurger__bottom, 
+	.btnBurger__middle, 
+	.btnBurger__top 
+		position: absolute
+		background: #fff
+		height: 4px
+		transition: all 0.3s ease
+		width: 100%
+	
+	.btnBurger__top 
+		top: 0
+		left: 0
+	
+	.btnBurger__middle 
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+	
+	.btnBurger__bottom 
+		bottom: 0
+		right: 0
+	
+	&:hover 
+		.btnBurger__top 
+			top: 50%
+			transform: translateY(-50%)
+		
+		.btnBurger__bottom  
+			bottom: 50%
+			transform: translateY(50%)
+	
+	&.active 
+		.btnBurger__top, .btnBurger__bottom 
+			top: 50%
+			left: 0
+			transform: rotate(225deg)
+		
+		.btnBurger__middle 
+			top: 50%
+			right: 0
+			transform: rotate(135deg)
+// Menu Burger End   
 
 .button
-	display: inline-block
-	font-size: 16px
-	font-weight: bold
-	text-transform: uppercase
-	color: #e8e8e8
 	border-radius: 25px
 	border: 1px solid #e8e8e8
-	padding: 16px 27px
+	color: #e8e8e8
+	display: inline-block
+	font-size: 13px
+	font-weight: bold
+	letter-spacing: 1px
+	padding: 9px 30px
+	text-transform: uppercase
+
+
+
+
+
 
 
 
