@@ -8,4 +8,12 @@ $(function() {
 			menuBurger.toggleClass('active');
 	});
 	// End Menu Burger
+
+	$('.slider').owlCarousel({
+		items: 1,
+		center: true,
+		loop: true
+	});
+
+
 });

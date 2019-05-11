@@ -205,19 +205,23 @@ section
 .section_2
 	background-color: #f5f5f5
 
+.section_3
+	padding: 100px 0 0 0
+
 .works
-	padding: 60px 0
+	padding: 60px 0 0 0
 	.container-fluid
 		padding: 0
 
 	.w_link
-		display: none
+		opacity: 0
 		position: absolute
 		bottom: 0
 		right: 0
 		left: 0
 		top: 0
 		padding: 75px 0 0 0
+
 		
 		.title_link
 			font-size: 15px
@@ -227,14 +231,56 @@ section
 	
 	.works_item
 		position: relative
-		
 		&:hover
 			.w_link
-				display: block
+				opacity: 1
 				background-color: $overlay
-				
+				transition: all 0.3s ease
 
+.slider
+	padding: 55px	0 0 0
 
+	.slide_item
+		.s_comments
+			position: relative
+			padding: 0 10px 70px 10px
+			font-size: 16px
+			line-height: 26px
+			color: #2b3746
+			&::after
+				content: "”"
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 20px
+				font-size: 40px
+				font-weight: bold
+				color: #abaeb2
+
+	.s_author
+		line-height: 20px
+		.s_author_foto
+			border-radius: 50%
+			width: 68px
+			margin: 0 auto 15px
+
+		.s_author_name
+			font-size: 15px
+			font-weight: bold
+
+		.s_author_desc
+			font-size: 13px
+
+.owl-theme .owl-dots .owl-dot span
+	background: 0 0
+	border: 1px solid #2b3746
+	width: 15px
+	height: 15px
+	margin: 5px 3px
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+	background: #2b3746
+.owl-theme .owl-nav.disabled+.owl-dots
+	margin-top: 17px
 
 
 @import "media" // Always at the end
