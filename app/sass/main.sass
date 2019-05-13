@@ -236,6 +236,7 @@ section
 				opacity: 1
 				background-color: $overlay
 				transition: all 0.3s ease
+				cursor: pointer
 
 .slider
 	padding: 55px	0 0 0
@@ -281,6 +282,92 @@ section
 	background: #2b3746
 .owl-theme .owl-nav.disabled+.owl-dots
 	margin-top: 17px
+
+.section_5
+	position: relative
+	background: url(../img/background_section_1.png) no-repeat center
+	background-size: cover
+
+	.our_team_wrap
+		padding-top: 85px
+
+	.section_title
+		color: #f2f2f2
+		&::after
+			background-color: #f2f2f2
+
+	.our_team
+
+		.worker
+			&:hover
+				.w_bio_read
+					opacity: 1
+					transition: all .5s ease
+			.w_bio
+				position: relative
+			.w_bio_read
+				position: relative
+				background-color: $overlay
+				bottom: 0
+				color: #d2d1d2
+				cursor: pointer
+				left: 0
+				opacity: 0
+				padding: 115px 0 0 0
+				position: absolute
+				right: 0
+				text-transform: uppercase
+				top: 0
+				&::after
+					content: ""
+					position: absolute
+					margin: 0 auto
+					bottom: 105px
+					left: 0
+					right: 0
+					width: 40px
+					height: 2px
+					background-color: #d2d1d2
+
+			.w_desc
+				background-color: rgba(242, 242, 242, 0.75)
+				padding: 25px 30px 25px 30px
+				.w_name
+					font-size: 15px
+					color: $color_title
+					font-weight: 800
+					line-height: 20px
+				.w_post
+					font-size: 14px
+					color: #29323c
+					font-weight: 200
+				.w_soc_link
+					padding-top: 25px
+					& > a
+						display: inline-block
+						width: 25px
+						height: 25px
+						margin-right: 6px
+						filter: opacity(70%)
+					.icon_tw
+						background: url(../img/icon_tw.png) no-repeat center
+					.icon_in
+						background: url(../img/icon_link.png) no-repeat center
+					.icon_vm
+						background: url(../img/icon_vimeo.png) no-repeat center
+					.icon_dr
+						background: url(../img/icon_dribble.png) no-repeat center
+					.icon_mail
+						background: url(../img/icon_mail.png) no-repeat center
+
+
+
+
+
+
+
+
+
 
 
 @import "media" // Always at the end
