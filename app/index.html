@@ -524,26 +524,36 @@
 				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9bc64267397710dc2996ede4a44b515ddfd823399fcb230b603f2c4d71e46a7&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
 			</div>
 		</div>
-		<div class="col-md-6 send_form">
+		<div class="col-md-6">
+			<div class="send_form">
 			<form action="" method="post">
-				<div class="form-group">
-						<label for="name">Ваше имя:</label>
-						<input type="name" name="name" class="form-control" id="name" placeholder="Name">
+				<div class="form-group row">
+					<label for="name" class="col-sm-2 col-form-label">Name:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="name" placeholder="Name">
+					</div>
 				</div>
-				<div class="form-group">
-						<label for="email1">E-mail:</label>
-						<input type="email" name="email" class="form-control" id="email1" placeholder="Email">
+				<div class="form-group row">
+					<label for="email" class="col-sm-2 col-form-label">Email:</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="email" placeholder="E-mail">
+					</div>
 				</div>
-				<div class="form-group">
-						<label for="phone">Номер телефона:</label>
-						<input type="phone" name="phone" class="form-control" id="phone" placeholder="Phone">
+				<div class="form-group row">
+					<label for="phone" class="col-sm-2 col-form-label">Phone:</label>
+					<div class="col-sm-10">
+						<input type="phone" class="form-control" id="phone" placeholder="Phone">
+					</div>
 				</div>
-				<div class="form-group">
-						<label for="message">Сообщение:</label>
-						<textarea class="form-control" name="message" rows="3"></textarea>
+				<div class="form-group row">
+						<label for="message" class="col-sm-2 col-form-label">Сообщение:</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" placeholder="Message" cols="50" rows="3"></textarea>
+					</div>
 				</div>
 						<button type="submit" class="btn btn-info">Отправить сообщение</button>
 				</form>
+			</div>
 		</div>
 	</div>
 </section>
